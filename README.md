@@ -16,7 +16,7 @@ Music and Sound is custom-built music SPA with a modern and responsive design.
  * CSS3 
  * Flexbox
  * Vanilla JS
- * Image optimisation  
+ * Image optimization  
 
 ## Author
 
