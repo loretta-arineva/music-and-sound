@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Loretta Arineva">
+  <meta name="copyright" content="Loretta Arineva">
+  <meta name="robots" content="follow">
+  <meta name="description" content="">
+  <meta http-equiv="expires" content="43200">
+  <title>Museum Of Candy</title>
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="./font-awesome/css/all.css">
+</head>
+
+<body>
+  <header>
+    <nav id="main-nav">
+      <ul>
+        <li>Candy</li>
+        <li>Home</li>
+        <li>About</li>
+        <li>Tickets</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="hero-content">
+        <div class="content-wrapper">
+          <h2>Museum<span class="foward-slash">/</span>of<span class="foward-slash">/</span>candy</h2>
+          <h2>Museum<span class="foward-slash">/</span>of<span class="foward-slash">/</span>candy</h2>
+          <h2>Museum<span class="foward-slash">/</span>of<span class="foward-slash">/</span>candy</h2>
+          <h2>Museum<span class="foward-slash">/</span>of<span class="foward-slash">/</span>candy</h2>
+          <h2>Museum<span class="foward-slash">/</span>of<span class="foward-slash">/</span>candy</h2>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="./images/hand2.png" alt="A photo of a hand holding a donnut.">
+      </div>
+    </section>
+    <!-- Articles -->
+    <section id="articles">
+      <article>
+        <div class="article-img">
+          <img src="./images/milk.png" alt="Three bottles of milk with straws and a donnut on each straw.">
+        </div>
+        <div class="article-content">
+          <div class="content-wrapper">
+            <h3>Museum of candy</h3>
+            <img src="./images/lolli_icon.png" class="lollipop" alt="Icon of a lollipop.">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae beatae, maiores deserunt
+              in voluptatibus
+              aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur repellat eveniet
+              quidem
+              voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam autem nam ex
+              deserunt debitis
+              eaque ratione! Nobis, quidem assumenda.
+            </p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <div class="article-content">
+          <div class="content-wrapper">
+            <h3>Museum of candy</h3>
+            <img src="./images/lolli_icon.png" class="lollipop" alt="Icon of a lollipop.">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae beatae, maiores deserunt
+              in voluptatibus
+              aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur repellat eveniet
+              quidem
+              voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam autem nam ex
+              deserunt debitis
+              eaque ratione! Nobis, quidem assumenda.
+            </p>
+          </div>
+        </div>
+        <div class="article-img">
+          <img src="./images/gumball.png" alt="A photo of a gumball with candy.">
+        </div>
+      </article>
+      <article>
+        <div class="article-img">
+          <img src="./images/sprinkles.png" alt="A photo of a glass with candy sprinkles.">
+        </div>
+        <div class="article-content">
+          <div class="content-wrapper">
+            <h3>Museum of candy</h3>
+            <img src="./images/lolli_icon.png" class="lollipop" alt="Icon of a lollipop.">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, iste molestiae beatae, maiores deserunt
+              in voluptatibus
+              aspernatur architecto excepturi delectus soluta? Ipsa, deleniti dolorem hic consequatur repellat eveniet
+              quidem
+              voluptate necessitatibus dolorum delectus minus vitae, ut, veritatis sint ipsum magnam autem nam ex
+              deserunt debitis
+              eaque ratione! Nobis, quidem assumenda.
+            </p>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>Loretta Arineva &copy;2020</p>
+    <nav id="footer-nav">
+      <ul>
+        <li><a href=""><i class="fab fa-github"></i></a></li>
+        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script>
+    window.onscroll = () => {
+      const nav = document.querySelector('#main-nav');
+      if (this.scrollY <= 20) nav.className = ''; else nav.className = 'scroll';
+    };
+  </script>
+</body>
+
+</html>

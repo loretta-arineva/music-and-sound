@@ -1,0 +1,346 @@
+/* FONTS */
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./fonts/Nunito-ExtraLight.woff2') format('woff2'), url('./fonts/Nunito-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./fonts/Nunito-Light.woff2') format('woff2'), url('./fonts/Nunito-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./fonts/Nunito-Bold.woff2') format('woff2'), url('./fonts/Nunito-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./fonts/Nunito-Regular.woff2') format('woff2'), url('./fonts/Nunito-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1;
+    font-family: Nunito;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Main CSS */
+
+body {
+    background-color: #f5d9d5;
+}
+
+/* Main Navigation */
+
+header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#main-nav {
+    width: inherit;
+}
+
+nav li, .content-wrapper h2 {
+    color: white;
+}
+
+.scroll {
+    background-color: hsla(0, 0%, 100%, 0.65);
+}
+
+.scroll ul li {
+    color: #fa88b8;
+}
+
+#main-nav .scroll li {
+    color: #fa88b8;
+}
+
+#main-nav li {
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.foward-slash, #main-nav li:first-child, #main-nav li:hover, article h3, footer {
+    color: #EA1C2C;
+}
+
+nav:nth-child(1) li:first-child {
+    position: relative;
+    font-size: 1.7rem;
+    border-right: 1px solid #EA1C2C;
+    border-bottom: 1px solid #EA1C2C;
+    border-radius: 0 0 10px 0;
+}
+
+.scroll li:first-child {
+    border: none;
+}
+
+#main-nav li:hover {
+    cursor: pointer;
+}
+
+/* Hero and articles */
+
+#hero, article {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.hero-content, .hero-image, .article-img, .article-content {
+    flex: 1 1 50%;
+}
+
+.hero-content, .article-content, footer, .author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero .content-wrapper, .article-content {
+    text-align: center;
+}
+
+.content-wrapper h2, article h3, #main-nav li {
+    text-transform: uppercase;
+    font-weight: 200;
+}
+
+.content-wrapper h2 {
+    font-size: 5rem;
+    line-height: 1.5;
+}
+
+.hero-image img, .article-img img {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+}
+
+article .content-wrapper {
+    width: 70%;
+}
+
+.content-wrapper p {
+    color: #fa88b8;
+    line-height: 2;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+article h3 {
+    font-size: 2.8rem;
+}
+
+/* Footer */
+
+footer {
+    height: 60px;
+    font-size: 1.1rem;
+    flex-direction: row;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-top: 3px solid #fff;
+    background-color: white;
+}
+
+#footer-nav {
+    position: absolute;
+    right: 25px;
+    top: 25%;
+}
+
+#footer-nav ul {
+    display: flex;
+}
+
+#footer-nav ul li {
+    font-size: 2rem;
+    padding: 0 10px;
+}
+
+#footer-nav ul a:visited {
+    color: black;
+}
+
+#footer-nav ul a:hover {
+    color: #fa88b8;
+}
+
+/* Responsive */
+
+@media (max-width: 1910px) {
+    .content-wrapper h2 {
+        font-size: 4rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 1860px) {
+    .content-wrapper h2 {
+        font-size: 3rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 1250px) {
+    article h3 {
+        font-size: 2.5rem;
+    }
+    .article-content p {
+        line-height: 1.5;
+    }
+    .lollipop {
+        height: 100px;
+    }
+}
+
+@media (max-width: 1120px) {
+    #hero {
+        flex-wrap: wrap;
+    }
+    .hero-content, .hero-image {
+        flex: 1 1 100%;
+    }
+    .hero-content {
+        height: 100vh;
+        order: 2;
+    }
+    #footer-nav ul li {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 1020px) {
+    article h3 {
+        font-size: 2rem;
+        margin-bottom: 25px;
+    }
+    .article-content p {
+        line-height: 1.5;
+    }
+    .lollipop {
+        display: none;
+    }
+}
+
+@media (max-width: 930px) {
+    article {
+        flex-wrap: wrap;
+    }
+    .article-content, .article-image {
+        flex: 1 1 100%;
+    }
+    .article-content {
+        height: 100vh;
+        order: 2;
+    }
+    article h3 {
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+    .article-content p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 640px) {
+    #footer-nav {
+        position: relative;
+        right: 0;
+        margin: 0 auto;
+    }
+    footer {
+        height: 80px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .content-wrapper h2 {
+        font-size: 2.5rem;
+    }
+    article h3 {
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+    .article-content p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 450px) {
+    .content-wrapper h2 {
+        font-size: 2.2rem;
+    }
+    article h3 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    }
+    .article-content p {
+        font-size: 1.3rem;
+    }
+    #main-nav li {
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+}
