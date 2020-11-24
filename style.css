@@ -76,7 +76,11 @@ table {
 /* Main CSS */
 
 body {
-    background-color: #f5d9d5;
+    background: #0f0e0f;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Main Navigation */
@@ -93,38 +97,38 @@ header {
     width: inherit;
 }
 
-nav li, .content-wrapper h2 {
+nav li a, .content-wrapper h2 {
     color: white;
 }
 
 .scroll {
-    background-color: hsla(0, 0%, 100%, 0.65);
+    background-color: hsl(0, 0%, 100%);
 }
 
-.scroll ul li {
-    color: #fa88b8;
+.scroll ul li a {
+    color: black;
 }
 
 #main-nav .scroll li {
-    color: #fa88b8;
+    color: black;
 }
 
 #main-nav li {
     display: inline-block;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 10px;
-}
-
-.foward-slash, #main-nav li:first-child, #main-nav li:hover, article h3, footer {
-    color: #EA1C2C;
 }
 
 nav:nth-child(1) li:first-child {
     position: relative;
     font-size: 1.7rem;
-    border-right: 1px solid #EA1C2C;
-    border-bottom: 1px solid #EA1C2C;
+    border-right: 1px solid #00acff;
+    border-bottom: 1px solid #00acff;
     border-radius: 0 0 10px 0;
+}
+
+.foward-slash, #main-nav li:first-child a, #main-nav li:hover {
+    color: #00acff;
 }
 
 .scroll li:first-child {
@@ -165,6 +169,19 @@ nav:nth-child(1) li:first-child {
 .content-wrapper h2 {
     font-size: 5rem;
     line-height: 1.5;
+    background: linear-gradient(90deg, rgba(141, 0, 255, 1) 32%, rgba(0, 172, 255, 1) 77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+article h3 {
+    color: royalblue;
+}
+
+.foward-slash {
+    background: none;
+    -webkit-background-clip: content-box;
+    -webkit-text-fill-color: rgb(255, 255, 255);
 }
 
 .hero-image img, .article-img img {
@@ -178,7 +195,7 @@ article .content-wrapper {
 }
 
 .content-wrapper p {
-    color: #fa88b8;
+    color: white;
     line-height: 2;
     font-size: 1.2rem;
     font-weight: 300;
@@ -186,6 +203,7 @@ article .content-wrapper {
 
 article h3 {
     font-size: 2.8rem;
+    margin-bottom: 30px;
 }
 
 /* Footer */
@@ -197,8 +215,8 @@ footer {
     position: relative;
     font-size: 1.2rem;
     font-weight: 300;
-    border-top: 3px solid #fff;
-    background-color: white;
+    color: white;
+    background: #0f0e0f;
 }
 
 #footer-nav {
@@ -217,11 +235,11 @@ footer {
 }
 
 #footer-nav ul a:visited {
-    color: black;
+    color: white;
 }
 
 #footer-nav ul a:hover {
-    color: #fa88b8;
+    color: royalblue;
 }
 
 /* Responsive */

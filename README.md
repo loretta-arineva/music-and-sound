@@ -1,4 +1,4 @@
-# Museum of Candy
+# Music and Sound
 
 ## Table of contents
 
@@ -8,14 +8,15 @@
 
 ## About this project
 
-Museum of Canndy is a simple yet modernly designed web page.
+Music and Sound is custom-built music SPA with a modern and responsive design.
 
 ## Technologies
 
  * HTML5
  * CSS3 
  * Flexbox
- * Vanilla JS  
+ * Vanilla JS
+ * Image optimisation  
 
 ## Author
 
