@@ -320,6 +320,12 @@ footer {
     }
 }
 
+@media (max-width: 815px) {
+    .hero-content {
+        order: 0;
+    }
+}
+
 @media (max-width: 640px) {
     #footer-nav {
         position: relative;
